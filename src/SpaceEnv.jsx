@@ -5,7 +5,7 @@ import { OrbitControls,
 import { Astronaut } from "./components/Astronaut";
 import { Earth } from "./components/Earth";
 import { Earth1 } from "./components/Earth1";
-import { Moon } from "./components/moon";
+import { Moon } from "./components/Moon";
 // import { MoonCrater } from "./components/MoonCrater";
 import { Sun } from "./components/Sun";
 import { CyberpunkLaptop } from "./components/CyberpunkLaptop";
