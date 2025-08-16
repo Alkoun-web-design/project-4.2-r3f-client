@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Html } from "@react-three/drei";
+import { Html, Loader } from "@react-three/drei";
 import SpaceEnv from "./SpaceEnv";
 
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
   const date = currentDate.getFullYear();
 
   return (
-    <div className="h-screen w-full bg-black">
+    <div className="font-[Syncopate] h-screen w-full bg-black">
       
       <Canvas shadows>
         <SpaceEnv />
@@ -21,6 +21,7 @@ export default function App() {
             </footer>
         </Html>
       </Canvas>
+      <Loader />
     </div>
   );
 }
