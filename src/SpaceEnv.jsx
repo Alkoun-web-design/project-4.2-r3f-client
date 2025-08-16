@@ -27,8 +27,8 @@ export default function SpaceEnv() {
     <>
       <PerspectiveCamera
         makeDefault
-        position={[0, 0.225, 1.5]}   
-        fov={50}
+        position={[0, 0.220, 1.5]}   
+        fov={60}
         // near={0.5} // Adjust to model size
         // far={10}
       />
@@ -40,12 +40,12 @@ export default function SpaceEnv() {
         shadow-camera-near={0.5}
         shadow-camera-far={50}
       />
-      <OrbitControls  />
+      {/* <OrbitControls  /> */}
         <Stars position={[0, 1, 0]} scale={0.2}/>
         {/* <AstronautHelmet castShadow receiveShadow position={[0, 0.075, 1.43]} rotation={[0.3, 3.2, 0]} scale={0.007}/> */}
         {/* <Sun position={[10, 5, 20]}/> */}
         <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0, 0]} scale={0.01}/>
-        <Astronaut castShadow receiveShadow position={[0.1, 0, 1.28]} rotation={[0, -3.1, 0]} scale={0.15}/>
+        <Astronaut castShadow receiveShadow position={[0.1, 0, 1.29]} rotation={[0, -3.1, 0]} scale={0.15}/>
         <Center>
           <Moon receiveShadow position={[0, 62, 0]} scale={2}/>
         </Center>

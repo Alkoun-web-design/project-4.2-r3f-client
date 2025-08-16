@@ -6,24 +6,25 @@ Source: https://sketchfab.com/3d-models/astronaut-482bf87662fd4b378bcb3a2931d59c
 Title: astronaut
 */
 
-import React, { useRef, useEffect } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useRef } from 'react'
+// import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
+// import { useFrame } from '@react-three/fiber'
 
 export function Astronaut(props) {
   const group = useRef()
+  const bodyRef  = useRef()
+  const helmetRef = useRef()
+  const bagBaseRef = useRef()
+  const visorRef = useRef()
 
-  const { nodes, materials, animations } = useGLTF('/models/astronaut(1).glb')
-  const { actions, names } = useAnimations(animations, group)
+  // const { nodes, materials, animations } = useGLTF('/models/astronaut(1).glb')
+  const { nodes, materials } = useGLTF('/models/astronaut(1).glb')
+  // const { actions, names } = useAnimations(animations, group)
 
-  useEffect(() => {
-    if (actions && names.length > 0) {
-      // Play the first available animation
-      actions[names[0]].play()
-    }
-  }, [actions, names])
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
           <group name="3d45031c62534d44b6da04e2afe6a28cfbx" rotation={[Math.PI / 2, 0, 0]}>
@@ -35,6 +36,7 @@ export function Astronaut(props) {
                   <group name="Object_7">
                     <primitive object={nodes._rootJoint} />
                     <skinnedMesh
+                      ref={bodyRef}
                       castShadow
                       receiveShadow
                       name="Object_10"
@@ -43,6 +45,7 @@ export function Astronaut(props) {
                       skeleton={nodes.Object_10.skeleton}
                     />
                     <skinnedMesh
+                      ref={helmetRef}
                       castShadow
                       receiveShadow
                       name="Object_12"
@@ -51,7 +54,8 @@ export function Astronaut(props) {
                       skeleton={nodes.Object_12.skeleton}
                     />
                     <skinnedMesh
-                     castShadow
+                      ref={bagBaseRef}
+                      castShadow
                       receiveShadow
                       name="Object_122"
                       geometry={nodes.Object_122.geometry}
@@ -59,7 +63,8 @@ export function Astronaut(props) {
                       skeleton={nodes.Object_122.skeleton}
                     />
                     <skinnedMesh
-                     castShadow
+                      ref={visorRef}
+                      castShadow
                       receiveShadow
                       name="Object_124"
                       geometry={nodes.Object_124.geometry}
@@ -70,7 +75,7 @@ export function Astronaut(props) {
                     />
                     <group name="Object_9" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
                     <group name="Object_11" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
-                    <group name="Object_121" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
+                    <group ref={group} name="Object_121" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
                     <group name="Object_123" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
                   </group>
                 </group>
