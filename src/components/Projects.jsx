@@ -6,9 +6,9 @@ export default function Projects({setContent}){
         {
             name: 'Counselling with Iqra',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A business website with blogging capabilities for the admin. It was originally created using HTML, CSS and vanilla JS and PHP.</p> 
-                <p className="m-2">The website was structured as a wordpress theme and deployed on wordpress.</p>
-                <p className='m-2'>The website was later redesigned and re-developed to an 11ty project to preserve the blogging capabilities </p>
+                <p className="m-2">A psychologist's website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme</p> 
+                <p className="m-2">Later the client sought to have their website on a platofrm that could be less costly than an aerage webhosting service, so the website was converted into an 11ty project with blogging capabilities and hosted on netlify.</p>
+                <p className='m-2'>The understanding and creation of a wordpress theme using PHP, and later the use of 11ty with specific css and js files for each page allowed for better performance.</p>
             </div>,
             stack: '11ty',
             status: 'Complete',
@@ -18,8 +18,8 @@ export default function Projects({setContent}){
         {
             name: 'Stellar Services International',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A simple business website, developed using the Divi Builder on wordpress. The business website is a subsidiary of the Canam Steel Pvt Ltd.</p> 
-                <p className="m-2">The current version of the website was re-designed after taking a web desgining course from udemy.</p>
+                <p className="m-2">A simple business website, developed using the Divi Builder on wordpress. The business is a subsidiary of the Canam Steel Pvt Ltd.</p> 
+                <p className="m-2">Before designing the website, I undertook a website designing course from Udemy. with this new approach, I focused on using a builder so I can have maximum focus on designing rather than development.</p>
             </div>,
             stack: 'Wordpress',
             status: 'Complete',
@@ -41,7 +41,8 @@ export default function Projects({setContent}){
             name: 'Alkoun web design website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">My portfolio website, also built purely on HTML, CSS and JavaScript.</p> 
-                <p className="m-2">There were ambitions of designing the website with 3D models.</p>
+                <p className="m-2">This was the first website I openly exercised JavaScript progrramming, and after creating navigation without refreshing the page, I knew I could make it.</p> 
+                <p className="m-2">After using images to convey the sense of rotation, I became interested in implememnting 3d models with animations.</p>
             </div>,
             stack: 'HTML, CSS, JS',
             status: 'Complete',
@@ -52,8 +53,8 @@ export default function Projects({setContent}){
             name: 'AWDev website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">A redesinged portfolio website, built using React and React Three Fiber.</p> 
-                <p className="m-2">The project started years ago, however i returned to complete it as my comfort with react had grown tremendously in recent years and projects.</p>
-                <p className="m-2">The use of animations, custom models with custom textures, and optimized 3d models, along with familiarity with drei tools are all areas ripe for further improvement and mastery.</p>
+                <p className="m-2">The project started years ago, however i returned to complete it after i had grown comfortable with React and understood its rendering fundamnetals.</p>
+                <p className="m-2">I learnt the use of drei tools, scene building, use of simple animations, custom models with custom textures, and optimized 3d models. However there is plenty to learn, and serves as a perfect jumping point for Augmented Reality and Virtual Reality.</p>
             </div>,
             stack: 'React 3 Fiber',
             status: 'Complete',
@@ -63,9 +64,9 @@ export default function Projects({setContent}){
         {
             name: 'Saeed & Sons Ecommerce website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">My first React website and my first E-commerce website, built using React, MUI and MedusaJS with postgresql db.</p> 
-                <p className="m-2">The project was built for a business client, however I lost the client to another e-commerce developer.</p>
-                <p className="m-2">Even though losing the client was rough, It was a great achievemnet to develop something in React when i still didnt understand it will. This gave me greater confidence to continue learning and incorporating react.</p>
+                <p className="m-2">My first React website and my first E-commerce website, built using React, MUI components library and MedusaJS with postgresql db.</p> 
+                <p className="m-2">The project was built for a business client, however I lost the client to another e-commerce developer.</p> 
+                <p className="m-2">There was initial feeling of loss, however upon I reflection, I had learnt using React, MUI, MedusaJS within a psan of two weeks. This raised my confidence in learning new technologies.</p>
             </div>,
             stack: 'React and MedusaJS',
             status: 'In-development',
@@ -77,7 +78,7 @@ export default function Projects({setContent}){
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">My first React Three Fiber website, it was originally designed to wish someone personally on their birthday.</p> 
                 <p className="m-2">The scene was originally inside a cafe with balloons, two cakes, and people seated at their tables. Another building was visible through the window from across the street.</p>
-                <p className="m-2">I later redesigned the scene to have fewer models, with smaller sizes and animations, with the aim of communicating a joyous birthday get together. This resulted in better loading times, better performance, and a better undertanding of implmenting a message using a scene with the least amount of 3d assets.</p>
+                <p className="m-2">I recently redesigned the scene to have fewer models, with smaller sizes and animations, with the aim of communicating the message through angles and objects, instead of building an complete scene. This resulted in better loading times, better performance with the least usage of resources.</p>
             </div>,
             stack: 'React 3 Fiber',
             status: 'Complete',
@@ -87,21 +88,20 @@ export default function Projects({setContent}){
         {
             name: 'AARC website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A simple website for a team of psychologists and psychotherapists starting their business. The website was built using HTML, CSS and JavaScript on the frontend, and for the first time, NodeJs on the backend to validate and accept form submissions, whilst serving static files.</p> 
-                <p className="m-2">The design was rudimentary as there was a certain deadline by which the team wanted the website to be up and active, with the most important aspect of the website being that visitors could submit forms to the team.</p>
-                <p className="m-2">There was a dire need to improve the design of the website, and possibly introduce more dynamic and interactivbe elements.</p>
+                <p className="m-2">A website for a team of psychologists and psychotherapists who were launching a space for therapists. The website was built using HTML, CSS and JavaScript on the frontend, and for the first time, NodeJs on the backend to validate and accept form submissions, whilst serving static files.</p> 
+                <p className="m-2">The design was rudimentary as there was a certain deadline by which the team wanted the website to be up and active, with the most important aspect of the website being that visitors could submit their forms to the team.</p>
+                <p className="m-2">This was my fist foray into a backend, preoccupying most of my time, resulting in a lackluster website design. I made commitments to upgrade the design later that year.</p>
             </div>,
             stack: 'HTML, CSS, JS, NodeJS',
             status: 'Complete',
             githubLink: '',
-            hostLink: ''
+            hostLink: 'https://project-6-aarc-node.vercel.app/'
         },
         {
             name: 'AARC website re-designed',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">The website for AARC was re-designed a year later using tailwindcss, templates, and also incoprorating animations through state management using AplpineJS.</p> 
-                <p className="m-2">Many of the same functionality was carried over regarding the handling of forms, and the NodeJS server.</p>
-                <p className="m-2">Depending on future changes in functionality, the project could be moved to React.</p>
+                <p className="m-2">The website for AARC was re-designed a year later using tailwindcss, tailgrids templates, and also incoprorating animations through state management using AlpineJS.</p> 
+                <p className="m-2">The design was much cleaner, with more use of white. There was a dilemma on whether i shoudl use HTMX, AlpineJS, or ReactJS, and eventually settled on AlpineJS due to it being readily incorporated into the template. Much of the form functionality carried over from the old website to the redesigned website.</p>
             </div>,
             stack: 'AlpineJS, NodeJS',
             status: 'Complete',
@@ -111,8 +111,8 @@ export default function Projects({setContent}){
         {
             name: 'Binance Cryptocurrency Table',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A personal project, built using SolidJS for performance on the frontend.</p> 
-                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. Data was generated using weebsocket connections, and the project gave me a firm grip and understanding on manipulating data.</p>
+                <p className="m-2">A personal project, built using SolidJS for performance in mind. During development, there was much being made of signals and how SolidJS removed the shadowDOM updatete step.</p> 
+                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. theproject allowed me to retrieve data through weebsocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
                 <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to dispaly the results.</p>
             </div>,
             stack: 'SolidJS, NodeJS',
@@ -137,7 +137,7 @@ export default function Projects({setContent}){
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">This is an e-commerce site, selling one or two products, built on Shopify's Headless Commerce framework: Hydrogen</p> 
                 <p className="m-2">The store is based on an exosting Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
-                <p className="m-2">The Hyrogen framework is based on the Remix platform, however i did not spend too much time understanding the idiosyncracies of Remix, and it is going through yet another change.</p>
+                <p className="m-2">The Hyrogen framework is based on the Remix platform, however i did not spend too much time absorbing the idiosyncracies of Remix, currently it going through a change.</p>
             </div>,
             stack: 'HydrogenJS, Shopify',
             status: 'Complete',
@@ -153,19 +153,20 @@ export default function Projects({setContent}){
             stack: 'ReactJS',
             status: 'Complete',
             githubLink: '',
-            hostLink: 'https://project-10-eye-analyzer.vercel.app/'
+            hostLink: 'https://mindmuscles.net/'
         },
         {
             name: 'Mind Muscles Academy website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">The complete website for the Mind Muscles Academy business. The frontend was developed using React while the backend relies on NodeJS and Express, with a MySQL Database.</p> 
-                <p className="m-2">The project went through several iterations in development. It started out as an Astro project using a SQLite Database, with a custom frontend designed by a graaphics designer.</p>
-                <p className="m-2">With the demands of inserting users, and a content management system, React and NodeJs were ultimately chosen for development and production, The project solidified principles and strategies regarding React rendering, using React Router, and NodeJs routes and sessions.</p>
+                <p className="m-2">The complete website for the Mind Muscles Academy business. The frontend was developed using ReactJS and TypeScript, while the backend relies on NodeJS and Express, with a MySQL Database.</p> 
+                <p className="m-2">The project went through several iterations in development. It started out as an Astro project using an SQLite Database, and a custom frontend designed by a graaphics designer. Then the website was to use ReactJS and NodeJS with UI templates from tailgrids.</p>
+                <p className="m-2">With the deadline approaching fast, and AI making tremendous leaps, the client suggested using an AI website generator. We picked bolt.new to generate a website according to certain UI principles. The generated website was built using ReactJS and Typescript with NodeJS as a backend.</p>
+                <p className="m-2">However the due to certain demands of inserting user logins and a content management system, the development time increased, and the short-comings of AI generated coding started to rear it's head. Multiple corrections and optimizations had to be made to the AI generated project, solidified principles and strategies regarding ReactJS rendering, Types with ReactJS, React Router, Data fetching using React Query, NodeJS routes and sessions.</p>
             </div>,
             stack: 'ReactJS, NodeJS',
             status: 'Complete',
             githubLink: '',
-            hostLink: 'https://mindmuscles.net/'
+            hostLink: 'https://resonant-muffin-0c12ee.netlify.app/'
         },
         // {
         //     name: 'Ecommerce website',
