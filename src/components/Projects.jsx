@@ -213,7 +213,7 @@ export default function Projects({setContent}){
             stack: 'ReactJS, NodeJS, Mistral AI',
             status: 'In-development',
             githubLink: '',
-            hostLink: ''
+            hostLink: 'https://project-16-aichatbot-client.netlify.app/'
         },
         {
             name: 'Form Filler webapp',
@@ -225,7 +225,7 @@ export default function Projects({setContent}){
             stack: 'ReactJS, NodeJS, Qwen-2.5VL (llama)',
             status: 'In-development',
             githubLink: '',
-            hostLink: ''
+            hostLink: 'https://project-17-formfiller-client.netlify.app/'
         },
         {
             name: 'Email handling webserver',
