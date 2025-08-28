@@ -19,7 +19,7 @@ export function Astronaut(props) {
   const visorRef = useRef()
 
   // const { nodes, materials, animations } = useGLTF('/models/astronaut(1).glb')
-  const { nodes, materials } = useGLTF('/models/astronaut(1).glb')
+  const { nodes, materials } = useGLTF('/models/astronaut(1)_optimized.glb')
   // const { actions, names } = useAnimations(animations, group)
 
 
@@ -96,4 +96,4 @@ export function Astronaut(props) {
   )
 }
 
-useGLTF.preload('/models/astronaut(1).glb')
+useGLTF.preload('/models/astronaut(1)_optimized.glb')

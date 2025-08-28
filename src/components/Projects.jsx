@@ -95,7 +95,7 @@ export default function Projects({setContent}){
             stack: 'HTML, CSS, JS, NodeJS',
             status: 'Complete',
             githubLink: '',
-            hostLink: 'https://project-6-aarc-node.vercel.app/'
+            hostLink: 'https://project-7-aarc-node.vercel.app/'
         },
         {
             name: 'AARC website re-designed',
@@ -109,16 +109,16 @@ export default function Projects({setContent}){
             hostLink: 'http://aarctherapy.com/'
         },
         {
-            name: 'Binance Cryptocurrency Table',
+            name: 'Binance Cryptocurrency Tableok',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A personal project, built using SolidJS for performance in mind. During development, there was much being made of signals and how SolidJS removed the shadowDOM updatete step.</p> 
+                <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved peformance by removed the shadowDOM update step, therefire i was inclined use it for this particular web-app.</p> 
                 <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. theproject allowed me to retrieve data through weebsocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
                 <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to dispaly the results.</p>
             </div>,
-            stack: 'SolidJS, NodeJS',
+            stack: 'Astro, SolidJS, NodeJS',
             status: 'Complete',
             githubLink: '',
-            hostLink: 'https://project-9-client.netlify.app/'
+            hostLink: 'https://project-10-ca-react.netlify.app/'
         },
         {
             name: 'Cryptocurrency Project',
@@ -142,7 +142,7 @@ export default function Projects({setContent}){
             stack: 'HydrogenJS, Shopify',
             status: 'Complete',
             githubLink: '',
-            hostLink: 'https://project-10-eye-analyzer.vercel.app/'
+            hostLink: 'https://project-11-ea-hydrogen-shopify.vercel.app/'
         },
         {
             name: 'Mind Muscles placeholder website',
@@ -239,18 +239,18 @@ export default function Projects({setContent}){
             githubLink: '',
             hostLink: ''
         },
-        {
-            name: 'Ecommerce webapp',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">An ecommerce store built using NextJS and MedusaJS.</p> 
-                <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
-                <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
-            </div>,
-            stack: 'NextJS, MedusaJS',
-            status: 'In-development',
-            githubLink: '',
-            hostLink: ''
-        },
+        // {
+        //     name: 'Ecommerce webapp',
+        //     description: <div className='mx-2 mt-2 mb-4'> 
+        //         <p className="m-2">An ecommerce store built using NextJS and MedusaJS.</p> 
+        //         <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
+        //         <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
+        //     </div>,
+        //     stack: 'NextJS, MedusaJS',
+        //     status: 'In-development',
+        //     githubLink: '',
+        //     hostLink: ''
+        // },
 
     ]
 

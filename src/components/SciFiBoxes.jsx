@@ -6,11 +6,10 @@ Source: https://sketchfab.com/3d-models/futuristic-scifi-style-small-tableboxes-
 Title: Futuristic scifi style small table/boxes
 */
 
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiBoxes(props) {
-  const { nodes, materials } = useGLTF('/models/futuristic_scifi_style_small_tableboxes.glb')
+  const { nodes, materials } = useGLTF('/models/futuristic_scifi_style_small_tableboxes_optimized.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -46,5 +45,5 @@ export function SciFiBoxes(props) {
   )
 }
 
-useGLTF.preload('/models/futuristic_scifi_style_small_tableboxes.glb')
+useGLTF.preload('/models/futuristic_scifi_style_small_tableboxes_optimized.glb')
 

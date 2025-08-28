@@ -6,11 +6,10 @@ Source: https://sketchfab.com/3d-models/sci-fi-crate-ammunition-box-2-342efe4d70
 Title: Sci-Fi crate / ammunition box (2)
 */
 
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiAmmunitionBox2(props) {
-  const { nodes, materials } = useGLTF('/models/sci-fi_crate__ammunition_box_2.glb')
+  const { nodes, materials } = useGLTF('/models/sci-fi_crate__ammunition_box_2_optimized.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
@@ -73,4 +72,4 @@ export function SciFiAmmunitionBox2(props) {
   )
 }
 
-useGLTF.preload('/models/sci-fi_crate__ammunition_box_2.glb')
+useGLTF.preload('/models/sci-fi_crate__ammunition_box_2_optimized.glb')

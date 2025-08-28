@@ -15,7 +15,7 @@ export function Earth1(props) {
   const earthAtmosphereRef = useRef()
   const earthSphereRef = useRef()
   // const { nodes, materials, animations } = useGLTF('/models/earth(1).glb')
-  const { nodes, materials } = useGLTF('/models/earth(1).glb')
+  const { nodes, materials } = useGLTF('/models/earth(1)_optimized.glb')
   // const { actions } = useAnimations(animations, earthAtmosphereRef)
 
   useFrame(() => {
@@ -56,4 +56,4 @@ export function Earth1(props) {
   )
 }
 
-useGLTF.preload('/models/earth(1).glb')
+useGLTF.preload('/models/earth(1)_optimized.glb')

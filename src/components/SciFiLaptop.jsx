@@ -6,11 +6,10 @@ Source: https://sketchfab.com/3d-models/sci-fi-laptop-alternative-90s-1d67104ac7
 Title: Sci Fi Laptop alternative 90s
 */
 
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiLaptop(props) {
-  const { nodes, materials } = useGLTF('/models/sci_fi_laptop_alternative_90s.glb')
+  const { nodes, materials } = useGLTF('/models/sci_fi_laptop_alternative_90s_optimized.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -28,4 +27,4 @@ export function SciFiLaptop(props) {
   )
 }
 
-useGLTF.preload('/models/sci_fi_laptop_alternative_90s.glb')
+useGLTF.preload('/models/sci_fi_laptop_alternative_90s_optimized.glb')
