@@ -111,8 +111,8 @@ export default function Projects({setContent}){
         {
             name: 'Binance Cryptocurrency Tableok',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved peformance by removed the shadowDOM update step, therefire i was inclined use it for this particular web-app.</p> 
-                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. theproject allowed me to retrieve data through weebsocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
+                <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved performance by removed the shadow DOM update step, therefore i was inclined use it for this particular web-app.</p> 
+                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
                 <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to dispaly the results.</p>
             </div>,
             stack: 'Astro, SolidJS, NodeJS',
@@ -135,9 +135,9 @@ export default function Projects({setContent}){
         {
             name: 'Eye Analyzing Tool website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">This is an e-commerce site, selling one or two products, built on Shopify's Headless Commerce framework: Hydrogen</p> 
-                <p className="m-2">The store is based on an exosting Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
-                <p className="m-2">The Hyrogen framework is based on the Remix platform, however i did not spend too much time absorbing the idiosyncracies of Remix, currently it going through a change.</p>
+                <p className="m-2">This is an e-commerce site, selling one or two products, built on shopify's Headless Commerce framework: Hydrogen.</p> 
+                <p className="m-2">The store is based on an existing Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
+                <p className="m-2">The Hydrogen framework is based on the Remix platform, however i did not spend too much time absorbing the idiosyncracies of Remix, currently it going through a change.</p>
             </div>,
             stack: 'HydrogenJS, Shopify',
             status: 'Complete',
@@ -148,7 +148,7 @@ export default function Projects({setContent}){
             name: 'Mind Muscles placeholder website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">This is a surface level placeholder website for the Mind Muscles Academy business.</p> 
-                <p className="m-2">It was Built using React and TailwindCSS.</p> 
+                <p className="m-2">It was Built using React and Tailwind CSS.</p> 
             </div>,
             stack: 'ReactJS',
             status: 'Complete',
@@ -159,7 +159,7 @@ export default function Projects({setContent}){
             name: 'Mind Muscles Academy website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">The complete website for the Mind Muscles Academy business. The frontend was developed using ReactJS and TypeScript, while the backend relies on NodeJS and Express, with a MySQL Database.</p> 
-                <p className="m-2">The project went through several iterations in development. It started out as an Astro project using an SQLite Database, and a custom frontend designed by a graaphics designer. Then the website was to use ReactJS and NodeJS with UI templates from tailgrids.</p>
+                <p className="m-2">The project went through several iterations in development. It started out as an Astro project using an SQLite Database, and a custom frontend designed by a graphics designer. Then the website was to use ReactJS and NodeJS with UI templates from tailgrids.</p>
                 <p className="m-2">With the deadline approaching fast, and AI making tremendous leaps, the client suggested using an AI website generator. We picked bolt.new to generate a website according to certain UI principles. The generated website was built using ReactJS and Typescript with NodeJS as a backend.</p>
                 <p className="m-2">However the due to certain demands of inserting user logins and a content management system, the development time increased, and the short-comings of AI generated coding started to rear it's head. Multiple corrections and optimizations had to be made to the AI generated project, solidified principles and strategies regarding ReactJS rendering, Types with ReactJS, React Router, Data fetching using React Query, NodeJS routes and sessions.</p>
             </div>,
@@ -185,7 +185,7 @@ export default function Projects({setContent}){
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">A simple website for a software outsourcing business, built on React, TailwindCSS and PHP.</p> 
                 <p className="m-2">The website was first developed in AlpineJS, however, the business wanted a blogging section aswell.</p>
-                <p className="m-2">The wensite is curretly under active development</p>
+                <p className="m-2">The website is currently under active development.</p>
             </div>,
             stack: 'ReactJS',
             status: 'In-development',
@@ -195,9 +195,9 @@ export default function Projects({setContent}){
         {
             name: "Mariam's Portfolio website",
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A relatively simple portfolio website for a professional built on React and TailwindCSS.</p> 
+                <p className="m-2">A relatively simple portfolio website for a professional built on React and Tailwind CSS.</p> 
                 <p className="m-2">Templates were used to quickly develop the website for being used by the professional.</p>
-                <p className="m-2">Further improvemments for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
+                <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
             </div>,
             stack: 'ReactJS',
             status: 'Complete',
