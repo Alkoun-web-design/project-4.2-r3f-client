@@ -6,9 +6,10 @@ export default function Projects({setContent}){
         {
             name: 'Counselling with Iqra',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A psychologist's website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme</p> 
-                <p className="m-2">Later the client sought to have their website on a platofrm that could be less costly than an aerage webhosting service, so the website was converted into an 11ty project with blogging capabilities and hosted on netlify.</p>
-                <p className='m-2'>The understanding and creation of a wordpress theme using PHP, and later the use of 11ty with specific css and js files for each page allowed for better performance.</p>
+                <p className="m-2">A psychologist who wanted a business website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme, and then deployed on a standard hosting service provider providing for wordpress hosting, with a domain name.</p> 
+                <p className="m-2">Later the client sought to have their website redesigned, hosted without paying the hosting charges, and maintain the blogging capabilities of the original.</p>
+                <p className="m-2">I knew of netlify's free tier and support for static site generators and front end web apps and websites. I redesigned the website after taking a UI/UX course from Udemy, using HTML, CSS JavaScript, and a static site generator called 11ty. the blogging capabilities were reserved, as the client could now write in markdown files and insert them into a "blogs" folder to dynamically assemble a page for the new blog.</p>
+                <p className='m-2'>The project gave me an understanding of creating custom wordpress themes using HTML, CSS, JavaScript and PHP to create a wordpress theme. Later the use of  11ty with "Nunjucks" as a templating language allowed for me to use templates and inserting of blogs through markdown files.</p>
             </div>,
             stack: '11ty',
             status: 'Complete',
@@ -40,9 +41,9 @@ export default function Projects({setContent}){
         {
             name: 'Alkoun web design website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">My portfolio website, also built purely on HTML, CSS and JavaScript.</p> 
-                <p className="m-2">This was the first website I openly exercised JavaScript progrramming, and after creating navigation without refreshing the page, I knew I could make it.</p> 
-                <p className="m-2">After using images to convey the sense of rotation, I became interested in implememnting 3d models with animations.</p>
+                <p className="m-2">It was time to build my portfolio website, and try and implement my choices regarding not only style but programming as well.</p> 
+                <p className="m-2">The website was built purely on HTML, CSS and JavaScript. The navigation and animations were entirely handled by JavaScript, and it was the first programming problem I had solved using my existing knowledge of JavaScript at that time. It gave me confidence that I could program in the future.</p> 
+                <p className="m-2">While it was a great accomplishment, I had further ambitions of inserting 3D Models and levels of interactivity on the website, this led me to come back when I had understood how to use 3D models in web projects.</p>
             </div>,
             stack: 'HTML, CSS, JS',
             status: 'Complete',
@@ -52,9 +53,9 @@ export default function Projects({setContent}){
         {
             name: 'AWDev website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A redesinged portfolio website, built using React and React Three Fiber.</p> 
-                <p className="m-2">The project started years ago, however i returned to complete it after i had grown comfortable with React and understood its rendering fundamnetals.</p>
-                <p className="m-2">I learnt the use of drei tools, scene building, use of simple animations, custom models with custom textures, and optimized 3d models. However there is plenty to learn, and serves as a perfect jumping point for Augmented Reality and Virtual Reality.</p>
+                <p className="m-2">I redesigned the portfolio website to reflect the original ambitions of the first one, using React and React Three Fiber.</p> 
+                <p className="m-2">I came back to the website years later to finally use 3D models for a scene based in space, once I had grown comfortable with React. However I realized I need to further understand animations, compression, editing of meshes and textures regarding 3D models.</p>
+                <p className="m-2">I learnt to use drei tools, effective scene building, use of simple animations, custom models with custom textures, and optimized 3d models. However there is plenty to learn, and my portfolio website serves as a perfect testing ground for Augmented Reality and Virtual Reality.</p>
             </div>,
             stack: 'React 3 Fiber',
             status: 'Complete',
@@ -64,9 +65,9 @@ export default function Projects({setContent}){
         {
             name: 'Saeed & Sons Ecommerce website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">My first React website and my first E-commerce website, built using React, MUI components library and MedusaJS with postgresql db.</p> 
-                <p className="m-2">The project was built for a business client, however I lost the client to another e-commerce developer.</p> 
-                <p className="m-2">There was initial feeling of loss, however upon I reflection, I had learnt using React, MUI, MedusaJS within a psan of two weeks. This raised my confidence in learning new technologies.</p>
+                <p className="m-2">The client owns a super store and wanted to increase his reach in the neighborhood his store was situated in. He wanted an e-commerce store to also bring his business presence to the internet.</p> 
+                <p className="m-2">Even though I was well versed in HTML, CSS and JavaScript, it would require too much time to create an e-commerce website from scratch, especially without any knowledge of a backend. After I decided to use React with MUI, it became my first React project. Without any prior knowledge of React I rushed to learn components, props, state management and data fetching. I coupled the React frontend with a Medusa.js backend that deals with the inventory and shopping cart mechanics.</p> 
+                <p className="m-2">I lost the project after two weeks of work, and felt as if i had failed, however, upon reflection I had finally learnt React.js and was optimistic to use in future projects.</p>
             </div>,
             stack: 'React and MedusaJS',
             status: 'In-development',
@@ -100,8 +101,8 @@ export default function Projects({setContent}){
         {
             name: 'AARC website re-designed',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">The website for AARC was re-designed a year later using tailwindcss, tailgrids templates, and also incoprorating animations through state management using AlpineJS.</p> 
-                <p className="m-2">The design was much cleaner, with more use of white. There was a dilemma on whether i shoudl use HTMX, AlpineJS, or ReactJS, and eventually settled on AlpineJS due to it being readily incorporated into the template. Much of the form functionality carried over from the old website to the redesigned website.</p>
+                <p className="m-2">The website for AARC was re-designed a year later using tailwind css, tailgrids templates, and also incorporating animations through state management using AlpineJS.</p> 
+                <p className="m-2">The design was much cleaner, with more use of white. There was a dilemma on whether i should use HTMX, Alpine.js, or React.js, and eventually settled on Alpine.js due to it being readily incorporated into the template. Much of the form functionality carried over from the old website to the redesigned website.</p>
             </div>,
             stack: 'AlpineJS, NodeJS',
             status: 'Complete',
@@ -109,11 +110,11 @@ export default function Projects({setContent}){
             hostLink: 'http://aarctherapy.com/'
         },
         {
-            name: 'Binance Cryptocurrency Tableok',
+            name: 'Binance Cryptocurrency Table',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved performance by removed the shadow DOM update step, therefore i was inclined use it for this particular web-app.</p> 
                 <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
-                <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to dispaly the results.</p>
+                <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to display the results.</p>
             </div>,
             stack: 'Astro, SolidJS, NodeJS',
             status: 'Complete',
@@ -208,7 +209,7 @@ export default function Projects({setContent}){
             name: 'Mistral AI Chatbot webapp',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">The project is built using React and Tailwind on the frontend, and NodeJS on the backend.</p> 
-                <p className="m-2">The idea was to buitl a chatbot using the provided by MistralAI, however imporvements are still required in the project, i.e. using streaming, database, and parsing amrkdown.</p>
+                <p className="m-2">The idea was to buitl a chatbot using the API provided by MistralAI, however imporvements are still required in the project, i.e. using streaming, database, and parsing amrkdown.</p>
             </div>,
             stack: 'ReactJS, NodeJS, Mistral AI',
             status: 'In-development',
