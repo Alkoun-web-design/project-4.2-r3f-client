@@ -43,7 +43,7 @@ export default function SpaceEnv() {
         <Stars position={[0, 0, -20]} scale={0.3}/>
         {/* <Sun position={[10, 5, 20]}/> */}
         <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.01}/>
-        <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -3.1, 0]} scale={0.15}/>
+        <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/>
         {/* <EarthAstronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[5, -3.1, 0]} scale={0.15}/> */}
         <Moon receiveShadow position={[0, -0.165, 0]} scale={2}/>
         <SciFiLaptop castShadoww receiveShadow position={[-0.18, -0.055, 1.24]} rotation={[-0.03, 0.25, 0]} scale={0.25}/>  
