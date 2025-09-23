@@ -226,7 +226,8 @@ export default function Projects({setContent}){
             stack: 'ReactJS, NodeJS, Qwen-2.5VL (llama)',
             status: 'In-development',
             githubLink: '',
-            hostLink: 'https://project-17-formfiller-client.netlify.app/'
+            // hostLink: 'https://project-17-formfiller-client.netlify.app/'
+            hostLink: ''
         },
         {
             name: 'Email handling webserver',
