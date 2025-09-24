@@ -273,7 +273,7 @@ export default function Projects({setContent}){
             </div>
             <div className="font-[Roboto] px-4 md:px-8 w-auto h-auto md:h-full md:w-160">
                 
-                <div className="flex flex-row mx-auto">
+                <div className="flex flex-row mx-auto my-auto">
                     <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-600 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer'>
                         <LeftChevron className='h-6 w-6' />
                     </div>
@@ -281,7 +281,7 @@ export default function Projects({setContent}){
                         {/* <a href={projects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline text-lg m-1">{projects[index].name}</h3> <img className="inline h-5 w-5 mb-1" src="/images/bx_link-external.svg"/></a> */}
                         <a href={projects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline text-lg m-1">{projects[index].name}</h3> <Link /></a>                    
                     </div>
-                    <div onClick={() => {index === projects.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-600 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 my-2 cursor-pointer' >
+                    <div onClick={() => {index === projects.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-600 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer' >
                         <RightChevron className='h-6 w-6' />
                     </div>
                 </div>
