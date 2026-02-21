@@ -12,7 +12,8 @@ import { useFrame } from '@react-three/fiber'
 
 export function Stars(props) {
   const starsRef = useRef()
-  const { nodes, materials } = useGLTF('/models/extracted_minecraft_java_editions_stars.glb')
+  // const { nodes, materials } = useGLTF('/models/extracted_minecraft_java_editions_stars.glb')
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/extracted_minecraft_java_editions_stars.glb`)
   
   useFrame(() => {
     starsRef.current.rotation.y += 0.0001

@@ -9,7 +9,9 @@ Title: Sci Fi Laptop alternative 90s
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiLaptop(props) {
-  const { nodes, materials } = useGLTF('/models/sci_fi_laptop_alternative_90s_optimized.glb')
+  // const { nodes, materials } = useGLTF('/models/sci_fi_laptop_alternative_90s_optimized.glb')
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/sci_fi_laptop_alternative_90s_optimized.glb`)
+
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>

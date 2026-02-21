@@ -11,9 +11,10 @@ import { useGLTF } from '@react-three/drei'
 
 export function Astronaut(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/astronaut(1)/scene.gltf')
+  // const { nodes, materials, animations } = useGLTF('/models/astronaut(1)/scene.gltf')
   // const { actions } = useAnimations(animations, group)
-  
+  const { nodes, materials, animations } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/astronaut/scene.gltf`)
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
@@ -79,5 +80,5 @@ export function Astronaut(props) {
   )
 }
 
-useGLTF.preload('/models/astronaut(1)/scene.gltf')
+useGLTF.preload('https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/astronaut/scene.gltf')
 

@@ -9,7 +9,10 @@ Title: Futuristic scifi style small table/boxes
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiBoxes(props) {
-  const { nodes, materials } = useGLTF('/models/futuristic_scifi_style_small_tableboxes_optimized.glb')
+  // const { nodes, materials } = useGLTF('/models/futuristic_scifi_style_small_tableboxes_optimized.glb')
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/futuristic_scifi_style_small_tableboxes_optimized.glb`)
+
+  
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>

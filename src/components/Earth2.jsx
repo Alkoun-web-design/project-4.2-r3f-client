@@ -13,10 +13,12 @@ import { useFrame } from '@react-three/fiber'
 
 export function Earth2(props) {
   const group = useRef()
-  const { nodes, materials, 
+  // const { nodes, materials, 
     // animations 
-} = useGLTF('/models/earth_optimized.glb')
+// } = useGLTF('/models/earth_optimized.glb')
 //   const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/earth_optimized.glb`)
+
 
     useFrame(() => {
       group.current.rotation.y +=  0.0002

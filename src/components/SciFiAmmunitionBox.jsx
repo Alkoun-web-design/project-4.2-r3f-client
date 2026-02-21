@@ -9,7 +9,10 @@ Title: Sci-Fi crate / ammunition box (1)
 import { useGLTF } from '@react-three/drei'
 
 export function SciFiAmmunitionBox(props) {
-  const { nodes, materials } = useGLTF('/models/sci-fi_crate__ammunition_box_1_optimized.glb')
+  // const { nodes, materials } = useGLTF('/models/sci-fi_crate__ammunition_box_1_optimized.glb')
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/sci-fi_crate__ammunition_box_1_optimized.glb`)
+
+  
   return (
     <group {...props} dispose={null}>
       <mesh

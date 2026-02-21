@@ -9,7 +9,10 @@ Title: Moon - Petavius crater
 import { useGLTF } from '@react-three/drei'
 
 export function Moon(props) {
-  const { nodes, materials } = useGLTF('/models/moon_-_petavius_crater_optimized.glb')
+  // const { nodes, materials } = useGLTF('/models/moon_-_petavius_crater_optimized.glb')
+  const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/moon_-_petavius_crater_optimized.glb`)
+
+
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.17}>
