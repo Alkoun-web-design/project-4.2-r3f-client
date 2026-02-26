@@ -1,7 +1,0 @@
-{
-  "name": "awdev",
-  "compatibility_date": "2026-02-15",
-  "assets": {
-    "directory": "./dist"  // or "./build" if you're using CRA
-  }
-}
