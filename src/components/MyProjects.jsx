@@ -784,7 +784,7 @@ export default function MyProjects(){
                     { featuredProjects[index].status === 'Complete' ? <p>Status: <GreenDot/>{featuredProjects[index].status}</p> 
                     : <p>Status: <OrangeDot/>{featuredProjects[index].status}</p>}
                     <p className="m-2">Tech Stack: {featuredProjects[index].stack.map((techStack) => (
-                        <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+                        <span key={techStack.name} className="hover:-translate-y-1 duration-300 ease-out transition-all">
                             <img src={techStack.image} className="inline w-6 h-6 ml-3 mr-1 my-1"/>
                             <span className="my-auto">{techStack.name}</span>
                         </span>
