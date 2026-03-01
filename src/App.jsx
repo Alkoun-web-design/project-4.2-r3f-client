@@ -17,7 +17,6 @@ import { AnimatePresence } from "motion/react"
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import { Earth } from "./components/Icons";
-import NewCell from "./components/NewCell";
 
 export default function App() {
   const today = new Date;
@@ -48,7 +47,6 @@ export default function App() {
             <Suspense fallback={<AttributionsFallback />}>
               <Attributions />
             </Suspense>
-            <NewCell />
             <Suspense fallback={<MyProjectsFallback />}>
               <MyProjects />
             </Suspense>

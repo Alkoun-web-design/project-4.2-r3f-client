@@ -14,14 +14,6 @@ export default function AttributionsFallback() {
             >
         <p className="font-[Roboto]">Special Thanks to: </p>
             <div className="flex flex-row justify-between font-[Roboto] align-middle text-sm mt-4">
-                <div className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm'>
-                    <LeftChevron className='h-5 w-5' />
-                </div>
-                <div className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
-                    <RightChevron className='h-5 w-5' />
-                </div>
-            </div>
-            <div className="mx-auto text-center">
                 <Spinner />
             </div>
         </motion.div>

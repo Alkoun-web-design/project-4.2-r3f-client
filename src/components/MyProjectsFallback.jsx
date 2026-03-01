@@ -17,18 +17,7 @@ export default function MyProjectsFallback(){
             </div>
             <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
                 <Spinner />
-                <div className="flex flex-row mx-auto my-2">
-                    <div className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
-                        <LeftChevron className='h-6 w-6' />
-                    </div>
-                    <div className='text-sm rounded-sm mx-auto mb-4 px-2 py-1 w-fit text-center bg-gray-900 hover:bg-gray-100 hover:text-black transition:all ease-in-out duration-300'>
-                                       
-                    </div>
-                    <div className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm' >
-                        <RightChevron className='h-6 w-6' />
-                    </div>
-                </div>
-                <Spinner />
+                
             </div>
         </motion.div>
         <motion.div           
