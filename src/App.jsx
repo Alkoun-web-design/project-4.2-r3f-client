@@ -4,6 +4,7 @@ import {useState, lazy, Suspense} from "react";
 // import SpaceEnv from './SpaceEnv';
 // const LoaderComponent = lazy(() => import("./components/LoaderComponent"))
 const SpaceEnv = lazy(() => import("./SpaceEnv"));
+// const SpaceEnv3 = lazy(() => import("./components/SpaceEnv3"));
 // const Canvas = lazy(() => import('./components/CanvasComponent'))
 const MusicPlayer = lazy(() => import("./components/MusicPlayer"))
 import MusicPlayerFallback from "./components/MusicPlayerFallback"
