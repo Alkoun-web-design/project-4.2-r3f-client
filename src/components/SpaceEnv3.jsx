@@ -1,21 +1,11 @@
 import {useState, useEffect, useRef} from "react";
-import { PerspectiveCamera, OrbitControls, Html } from "@react-three/drei";
+import { PerspectiveCamera, OrbitControls, Html, ScreenSpace } from "@react-three/drei";
 import { Astronaut } from "./Astronaut";
-// import { EarthAstronaut } from "./EarthAstronaut";
-// import { Earth1 } from "./Earth1";
 import { Moon } from "./Moon";
-// import { MoonCrater } from "./MoonCrater";
 import { Sun } from "./Sun";
-import { SciFiLaptop}  from "./SciFiLaptop";
-// import { Laptop } from "./Laptop";
 import { Stars } from "./Stars";
-import { SciFiBoxes } from "./SciFiBoxes";
-import { SciFiAmmunitionBox } from "./SciFiAmmunitionBox";
-import { SciFiAmmunitionBox2 } from "./SciFiAmmunitionBox2";
-// import { SciFiRadar } from "./SciFiRadar";
-import { useFrame } from '@react-three/fiber';
 import { EffectComposer, GodRays } from '@react-three/postprocessing'
-import { Earth2 } from "./Earth2";
+import { Earth } from "./Earth";
 
 export default function SpaceEnv3() {
 
@@ -30,36 +20,31 @@ export default function SpaceEnv3() {
           setSunReady(true)
         }
     }, [])
-      
-    useFrame(() => {
-        // camRef.current.position.z += 0.005;
-    })
         
     return (
         <>
+          {/* <OrbitControls /> */}
           <PerspectiveCamera
             ref={camRef}
             makeDefault
             position={[0, 0.0, 1.5]}   
-            fov={60}
+            fov={20}
             // near={0.5} // Adjust to model size
             // far={10}
           />
           <directionalLight
-            position={[-3, 1.8, -8]}
+            position={[-2, 6, -18]}
             intensity={9}
             castShadow
             shadow-mapSize={[2048, 2048]} // Higher = sharper shadows
           />
-          {/* <OrbitControls  /> */}
-            <Stars position={[0, 0, -20]} scale={0.3}/>
-            {/* <Sun position={[-4, 4, -20]}/> */}
-            {/* <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.008}/> */}
-            <Earth2 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={1}/>
-            <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/>
-            
-            <ambientLight intensity={0.25} />
-            <mesh ref={sunRef} position={[-9, 4, -25]}>
+            <Stars position={[0, 0, -27]} scale={0.3}/>
+            {/* <Sun position={[0, 0, -20]}/> */}
+            <Earth castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/> 
+            {/* Thanks to Air Studios: https://sketchfab.com/airstudios3d */}
+            {/* <Astronaut castShadow receiveShadow position={[0, -0.01, 1.29]} rotation={[-0.3, -3.3, 0]} scale={0.01}/> */}
+            <ambientLight intensity={0.2} />
+            <mesh ref={sunRef} position={[-2, 2, -25]} scale={0.3} >
               <sphereGeometry args={[0.7, 16, 16]} />
               <meshBasicMaterial color="white" />
             </mesh>

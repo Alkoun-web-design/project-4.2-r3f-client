@@ -17,6 +17,10 @@ export function Stars(props) {
   
   useFrame(() => {
     starsRef.current.rotation.y += 0.0001
+    return (() => {
+        starsRef.current.rotation.y +=  0
+      }
+    )
   })
   return (
     <group ref={starsRef} {...props} dispose={null}>

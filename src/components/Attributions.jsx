@@ -4,6 +4,7 @@ import { useState } from "react"
 import { LeftChevron, RightChevron, Dot } from "./Icons";
 
 const attributions = [
+        { name: "Air Studios", link: "https://sketchfab.com/airstudios3d"},
         { name: "AjaxGb", link: "https://sketchfab.com/ajaxgb"},
         { name: "Patrick Matthew", link: "https://sketchfab.com/patrickmatthew"},
         { name: "Antropik", link: "https://sketchfab.com/Antropik"},

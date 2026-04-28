@@ -22,6 +22,10 @@ export function Earth2(props) {
 
     useFrame(() => {
       group.current.rotation.y +=  0.0002
+      return (() => {
+          group.current.rotation.y +=  0
+        }
+      )
     })
 
   return (

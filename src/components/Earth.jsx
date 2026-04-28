@@ -10,11 +10,12 @@ import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 export function Earth(props) {
-    const { nodes, materials } = useGLTF('/models/earth.glb')
+    const { nodes, materials } = useGLTF('/models/earth/scene.gltf')
     const earthRef = useRef()
 
     useFrame((state) => {
-        earthRef.current.rotation.y = state.clock.getElapsedTime() * 0.1
+        earthRef.current.rotation.y = state.clock.getElapsedTime() * 0.005
+        return(() => earthRef.current.rotation.y = 0)
     });
 
   return (
@@ -65,4 +66,4 @@ export function Earth(props) {
   )
 }
 
-useGLTF.preload('/models/earth.glb')
+useGLTF.preload('/models/earth/scene.gltf')

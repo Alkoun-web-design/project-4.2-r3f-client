@@ -3,8 +3,8 @@ import { Loader } from "@react-three/drei"
 import {useState, lazy, Suspense} from "react";
 // import SpaceEnv from './SpaceEnv';
 // const LoaderComponent = lazy(() => import("./components/LoaderComponent"))
-const SpaceEnv = lazy(() => import("./SpaceEnv"));
-// const SpaceEnv3 = lazy(() => import("./components/SpaceEnv3"));
+// const SpaceEnv = lazy(() => import("./SpaceEnv"));
+const SpaceEnv3 = lazy(() => import("./components/SpaceEnv3"));
 // const Canvas = lazy(() => import('./components/CanvasComponent'))
 const MusicPlayer = lazy(() => import("./components/MusicPlayer"))
 import MusicPlayerFallback from "./components/MusicPlayerFallback"
@@ -56,9 +56,10 @@ export default function App() {
         </AnimatePresence>
       </div>
       <div className="fixed top-0 -z-10 h-screen w-full  bg-black">
+      {/* <div className="fixed top-0 h-screen w-full  bg-black"> */}
         <Canvas shadows>
           <Suspense fallback={null} >
-            <SpaceEnv />
+            <SpaceEnv3 />
           </Suspense>
         </Canvas>
         <Loader />
