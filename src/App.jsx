@@ -1,9 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Loader } from "@react-three/drei"
 import {useState, lazy, Suspense} from "react";
-// import SpaceEnv from './SpaceEnv';
 // const LoaderComponent = lazy(() => import("./components/LoaderComponent"))
-// const SpaceEnv = lazy(() => import("./SpaceEnv"));
 const SpaceEnv3 = lazy(() => import("./components/SpaceEnv3"));
 // const Canvas = lazy(() => import('./components/CanvasComponent'))
 const MusicPlayer = lazy(() => import("./components/MusicPlayer"))
@@ -26,8 +24,8 @@ export default function App() {
   const [showSpace, setShowSpace] = useState(false);
 
   return (
-    <>
-    <main className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
+    <main>
+    <div className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
       <header className="col-span-full row-span-1 font-bold justify-items-center">
         <Suspense fallback={<MusicPlayerFallback/>}>
           <MusicPlayer />
@@ -54,7 +52,7 @@ export default function App() {
             </>
           )}
         </AnimatePresence>
-      </main>
+      </div>
       <div className="fixed top-0 -z-10 h-screen w-full  bg-black">
       {/* <div className="fixed top-0 h-screen w-full  bg-black"> */}
         <Canvas shadows>
@@ -64,6 +62,6 @@ export default function App() {
         </Canvas>
         <Loader />
       </div>
-    </>
+    </main>
   );
 }
