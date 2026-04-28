@@ -1,8 +1,6 @@
 import {useState, useEffect, useRef} from "react";
 import { PerspectiveCamera, OrbitControls, Html, ScreenSpace } from "@react-three/drei";
-import { Astronaut } from "./Astronaut";
-import { Moon } from "./Moon";
-import { Sun } from "./Sun";
+// import { Astronaut } from "./Astronaut";
 import { Stars } from "./Stars";
 import { EffectComposer, GodRays } from '@react-three/postprocessing'
 import { Earth } from "./Earth";
@@ -39,9 +37,7 @@ export default function SpaceEnv3() {
             shadow-mapSize={[2048, 2048]} // Higher = sharper shadows
           />
             <Stars position={[0, 0, -27]} scale={0.3}/>
-            {/* <Sun position={[0, 0, -20]}/> */}
             <Earth castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/> 
-            {/* Thanks to Air Studios: https://sketchfab.com/airstudios3d */}
             {/* <Astronaut castShadow receiveShadow position={[0, -0.01, 1.29]} rotation={[-0.3, -3.3, 0]} scale={0.01}/> */}
             <ambientLight intensity={0.2} />
             <mesh ref={sunRef} position={[-2, 2, -25]} scale={0.3} >
