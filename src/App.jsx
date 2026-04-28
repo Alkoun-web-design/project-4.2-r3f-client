@@ -24,7 +24,7 @@ export default function App() {
   const [showSpace, setShowSpace] = useState(false);
 
   return (
-    <main role="main">
+    <>
     <div className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
       <header className="col-span-full row-span-1 font-bold justify-items-center">
         <Suspense fallback={<MusicPlayerFallback/>}>
@@ -62,6 +62,6 @@ export default function App() {
         </Canvas>
         <Loader />
       </div>
-    </main>
+    </>
   );
 }
