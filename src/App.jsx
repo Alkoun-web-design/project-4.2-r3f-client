@@ -25,16 +25,16 @@ export default function App() {
 
   return (
     <>
-    <div className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
-      <header className="col-span-full row-span-1 font-bold justify-items-center">
-        <Suspense fallback={<MusicPlayerFallback/>}>
-          <MusicPlayer />
-        </Suspense>
-        <button onClick={() => setShowSpace(prev => !prev)} className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
-          {showSpace ? "Portfolio" : "Show Earth"}
-          <Earth />
-        </button>
-      </header>
+      <div className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
+        <header className="col-span-full row-span-1 font-bold justify-items-center">
+          <Suspense fallback={<MusicPlayerFallback/>}>
+            <MusicPlayer />
+          </Suspense>
+          <button onClick={() => setShowSpace(prev => !prev)} className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
+            {showSpace ? "Portfolio" : "Show Earth"}
+            <Earth />
+          </button>
+        </header>
         <AnimatePresence>
           { !showSpace && (   
             <>     
