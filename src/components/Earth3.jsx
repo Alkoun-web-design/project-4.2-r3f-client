@@ -12,7 +12,7 @@ import { useFrame } from '@react-three/fiber'
 
 export function Earth3(props) {
 
-    const { nodes, materials } = useGLTF('/models/earth_compressed.glb')
+    const { nodes, materials } = useGLTF('/models/earth_compressed4k4.glb')
     const earthRef = useRef()   
     useFrame((state) => {
         earthRef.current.rotation.y = state.clock.getElapsedTime() * 0.005
@@ -67,5 +67,5 @@ export function Earth3(props) {
   )
 }
 
-useGLTF.preload('/models/earth_compressed.glb')
+useGLTF.preload('/models/earth_compressed4k4.glb')
 
