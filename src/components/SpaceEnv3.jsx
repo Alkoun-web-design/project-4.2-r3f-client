@@ -22,7 +22,7 @@ export default function SpaceEnv3() {
         
     return (
         <>
-          <OrbitControls />
+          {/* <OrbitControls /> */}
           <PerspectiveCamera
             ref={camRef}
             makeDefault
