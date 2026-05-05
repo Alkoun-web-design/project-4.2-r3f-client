@@ -8,20 +8,20 @@ Title: [Extracted] Minecraft Java Edition's Stars
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
+// import { useFrame } from '@react-three/fiber'
 
 export function Stars(props) {
   const starsRef = useRef()
   // const { nodes, materials } = useGLTF('/models/extracted_minecraft_java_editions_stars.glb')
   const { nodes, materials } = useGLTF(`https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/extracted_minecraft_java_editions_stars.glb`)
   
-  useFrame(() => {
-    starsRef.current.rotation.y += 0.0001
-    return (() => {
-        starsRef.current.rotation.y +=  0
-      }
-    )
-  })
+  // useFrame(() => {
+  //   starsRef.current.rotation.y += 0.0001
+  //   return (() => {
+  //       starsRef.current.rotation.y +=  0
+  //     }
+  //   )
+  // })
   return (
     <group ref={starsRef} {...props} dispose={null}>
       <mesh

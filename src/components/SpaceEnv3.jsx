@@ -37,10 +37,10 @@ export default function SpaceEnv3() {
             castShadow
             shadow-mapSize={[2048, 2048]} // Higher = sharper shadows
           />
-            <Stars position={[0, 0, -27]} scale={0.3}/>
+            {/* <Stars position={[0, 0, -27]} scale={0.3}/> */}
             {/* <Earth castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/>  */}
             {/* <Earth3 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/>  */}
-            <Earth5 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/> 
+            <Earth5 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.8, -0.4, -1.2]} scale={0.01}/> 
             {/* <Earth6 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.3, 0, 0]} scale={0.19}/>  */}
             {/* <Astronaut castShadow receiveShadow position={[0, -0.01, 1.29]} rotation={[-0.3, -3.3, 0]} scale={0.01}/> */}
             <ambientLight intensity={0.2} />

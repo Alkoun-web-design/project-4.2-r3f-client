@@ -16,9 +16,11 @@ export function Earth5(props) {
   const { nodes, materials } = useGLTF('/models/earth_compressed(7).glb')
   
    const earthRef = useRef()   
-      useFrame((state) => {
-          earthRef.current.rotation.y = state.clock.getElapsedTime() * 0.005
-          return(() => earthRef.current.rotation.y = 0)
+      // useFrame((state) => {
+      useFrame(() => {
+          // earthRef.current.rotation.x = state.clock.getElapsedTime() * 0.005
+          earthRef.current.rotation.x += 0.00009
+          return(() => earthRef.current.rotation.x = 0)
       });
   
   return (
