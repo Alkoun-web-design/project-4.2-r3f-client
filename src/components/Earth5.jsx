@@ -71,5 +71,5 @@ export function Earth5(props) {
   )
 }
 
-useGLTF.preload('/earth_compressed(7).glb')
+useGLTF.preload('/models/earth_compressed(7).glb')
 

@@ -21,7 +21,7 @@ export default function App() {
   const today = new Date;
   today.getFullYear();
 
-  const [showSpace, setShowSpace] = useState(false);
+  const [page, setPage] = useState('Home');
 
   return (
     <>
@@ -30,13 +30,17 @@ export default function App() {
           <Suspense fallback={<MusicPlayerFallback/>}>
             <MusicPlayer />
           </Suspense>
-          <button onClick={() => setShowSpace(prev => !prev)} className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
-            {showSpace ? "Portfolio" : "Show Earth"}
+          <button onClick={() => setPage('Home')} className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
+            Home
+            <Earth />
+          </button>
+          <button onClick={() => setPage('Portfolio')} className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
+            Portfolio
             <Earth />
           </button>
         </header>
         <AnimatePresence>
-          { !showSpace && (   
+          { page === 'Portfolio' ? (   
             <>     
               <Hero />
               <AboutMe />
@@ -50,7 +54,16 @@ export default function App() {
                 <MyProjects />
               </Suspense>
             </>
-          )}
+          ) : (
+            <div className="grid col-start-2 col-end-11 place-items-center">
+              
+                <h1 className="text-5xl">AWdev</h1>
+                <h2>Making online experiences accessible for everyone.</h2>
+              
+            </div>
+          )
+          
+          }
         </AnimatePresence>
       </div>
       <div className="fixed top-0 -z-10 h-screen w-full  bg-black">
